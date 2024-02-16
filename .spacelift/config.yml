@@ -2,4 +2,9 @@ version: 2
 module_version: 0.1.2
 
 test_defaults:
-  before_init: ["echo this is a test"]
+  terraform_version: 1.5.7
+
+
+tests:
+  - name: This is a test
+    before_init: ["echo hello"]

@@ -6,5 +6,4 @@ resource "random_string" "this" {
 
 variable "bucket_name" {
   type    = string
-  default = random_string.this.result
 }

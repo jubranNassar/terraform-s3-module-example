@@ -3,7 +3,7 @@ resource "spacelift_module" "s3-module" {
   branch       = "main"
   repository   = "terraform-s3-module"
   project_root = "s3-module"
-  space_id     = data.spacelift_current_space.id
+  space_id     = data.spacelift_current_space.this.id
 
   github_enterprise {
     namespace = "jubranNassar"

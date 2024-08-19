@@ -6,4 +6,6 @@ resource "random_string" "this" {
 
 variable "bucket_name" {
   type    = string
+
 }
+

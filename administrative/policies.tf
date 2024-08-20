@@ -6,6 +6,6 @@ resource "spacelift_policy" "trigger-consumers" {
 }
 
 resource "spacelift_policy_attachment" "this" {
-    module_id = spacelift_module.s3-module.id
-    policy_id = spacelift_policy.trigger-consumers.id
+  module_id = spacelift_module.s3-module.id
+  policy_id = spacelift_policy.trigger-consumers.id
 }
